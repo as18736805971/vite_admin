@@ -21,7 +21,6 @@ export function getCode(data) {
   return request({
     url: 'api/login/web/smsCode',
     method: 'post',
-    data: data,
-    show_loading: true
+    data: data
   })
 }

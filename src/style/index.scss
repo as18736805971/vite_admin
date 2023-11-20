@@ -1,1 +1,99 @@
 @import './reset.css';
+@import './global.scss';
+@import './element-ui.scss';
+
+/* 屏蔽高德地图图标 */
+.amap-logo{
+  display: none;
+  opacity:0 !important;
+}
+.amap-copyright {
+  opacity:0;
+}
+/* 屏蔽高德地图图标 */
+
+/* 按钮公共样式 */
+.comm-btn {
+  height: 36px;
+  padding: 0 24px;
+  font-size: 14px;
+  color: $--color-text-regular;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  line-height: 36px;
+  border: 1px solid #d3d7db;
+  background-color: #ffffff;
+  margin-left: 8px;
+  svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    margin-bottom: -2px;
+  }
+  &:hover{
+    color: $--color-primary;
+    border-color: $--color-primary;
+    svg {
+      color: $--color-primary;
+    }
+  }
+}
+.comm-btn-primary {
+  color: #ffffff;
+  background: $--color-primary;
+  border-color: $--color-primary;
+  svg{
+    color: #ffffff;
+  }
+  &:hover{
+    color: #ffffff;
+    background: $--color-primary;
+    border-color: $--color-primary;
+  }
+}
+.comm-btn-success {
+  color: #ffffff;
+  background: $--color-success;
+  border-color: $--color-success;
+  svg{
+    color: #ffffff;
+  }
+  &:hover{
+    color: #ffffff;
+    background: $--color-success;
+    border-color: $--color-success;
+  }
+}
+.comm-btn-error {
+  color: #ffffff;
+  background: $--color-danger;
+  border-color: $--color-danger;
+  svg{
+    color: #ffffff;
+  }
+  &:hover{
+    color: #ffffff;
+    background: $--color-danger;
+    border-color: $--color-danger;
+  }
+}
+/* 按钮公共样式 */
+
+/* 搜索地理位置信息 */
+.pop_ser_it {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  color: #666666;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+.pop_ser_it:hover {
+  border-radius: 2px;
+  background: #ebebeb;
+  color: $--color-primary;
+}
+/* 搜索地理位置信息 */

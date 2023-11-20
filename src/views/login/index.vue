@@ -26,9 +26,13 @@ export default {
   },
   methods: {
     handleLogin() {
-      getCode(this.form).then((res) => {
-        console.log(res, '4444')
-      })
+      // this.$baseDialog(import('../home/index.vue'))
+      //   .title('设备详情')
+      //   .then(() => {})
+      //   .show()
+      // getCode(this.form).then((res) => {
+      //   console.log(res, '4444')
+      // })
     }
   }
 }

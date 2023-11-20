@@ -3,9 +3,9 @@ import App from './App.vue'
 import store from './store'
 import router from './router'
 import '@/utils/config'
-
-import '@/style/element-variables.scss'
 import '@/style/index.scss'
+import '@/style/element-variables.scss'
+import 'virtual:svg-icons-register'
 
 Vue.config.productionTip = false
 new Vue({
